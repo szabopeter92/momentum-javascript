@@ -17,7 +17,7 @@ function showTime(){
     //Idő megjelenítése az erre felvett elemeben (time)/böngészőben
     time.innerHTML = addZero(hour)+"<span>:</span>"+addZero(min)+"<span>:</span>"+addZero(sec);
 
-    //Lefuttatjuk mindegy másodpercben a showTime függvényünket -> minden másodpercben látni fogjuk az új időt megjelenítve a böngészőben
+    //Lefuttatjuk minden másodpercben a showTime függvényünket -> minden másodpercben látni fogjuk az új időt megjelenítve a böngészőben
     setTimeout(showTime, 1000);
     
 }
